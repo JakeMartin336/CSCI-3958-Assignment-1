@@ -1,0 +1,175 @@
+/*
+  You shouldn't need to change these properties for the assignment wrapped and red/green/blue color divs!
+*/
+#assignments-wrapper {
+  padding: 1.5rem;
+}
+
+.assignment {
+  min-height: 40px;
+  margin-bottom: .5rem;
+  background: black;
+  display: flex;
+}
+
+
+.red {
+  width: 5%;
+  height: 40px;
+  background: #DC3220;
+}
+
+.green {
+  width: 5%;
+  height: 40px;
+  background: #1AFF1A;
+}
+
+.blue {
+  width: 5%;
+  height: 40px;
+  background: #1A85FF;
+}
+
+/*
+Example 1 & 2 CSS
+*/
+
+#example1 {
+  justify-content: space-between;
+}
+
+#example2 {
+  justify-content: center;
+  align-items: center;
+}
+
+#example2 > .green {
+  height: 10px;
+  width: 100%;
+}
+
+#row1 {
+  justify-content: space-evenly;
+}
+
+#row2 {
+  justify-content: end;
+  align-items: center;
+}
+
+#row2 > .green {
+  height: 10px;
+}
+
+#row3 {
+  justify-content: space-evenly;
+}
+
+#row3 >.green {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#row3 .blue {
+  width: 10px;
+  height: 10px;
+}
+
+#row4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#row4 > .red {
+  height: 10px;
+}
+
+#row4 > .green { 
+  width: 10px;
+  height: 10px;
+}
+#row4 > .blue {
+  width: 10px;
+  height: 10px;
+}
+
+
+#row5 >.blue {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#row5 >.blue >.green{
+  height: 10px;
+  width: 100%;
+}
+
+#row5 >.green {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#row5 >.green >.red{
+  height: 10px;
+  width: 100%;
+}
+
+#row5 >.red {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#row5 >.red >.blue{
+  height: 10px;
+  width: 100%;
+}
+
+#row6 {
+  display: flex;
+}
+
+.red-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#row6 > .red-container > .red {
+  width: 10px;
+  height: 10px;
+}
+
+.green-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#row6 > .green-container > .green {
+  width: 10px;
+  height: 10px;
+}
+
+.blue-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#row6 > .blue-container > .blue {
+  width: 10px;
+  height: 10px;
+}
+
+
+/*
+Hint: Write Row 1 - 10 CSS below
+For smaller div dimensions (thin strips or boxes like in row 2 and 8) use 10px
+You should be able to complete this using display:flex, justify-content and align-items
+There's no one way to go about it, feel free to explore different approaches!
+*/
+
