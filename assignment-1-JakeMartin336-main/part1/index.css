@@ -50,7 +50,7 @@ Example 1 & 2 CSS
 }
 
 #row1 {
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 #row2 {
@@ -98,24 +98,24 @@ Example 1 & 2 CSS
 }
 
 
-#row5 >.blue {
+#row5 > .blue {
   display:flex;
   justify-content: center;
   align-items: center;
 }
 
-#row5 >.blue >.green{
+#row5 > .blue > .green{
   height: 10px;
   width: 100%;
 }
 
-#row5 >.green {
+#row5 > .green {
   display:flex;
   justify-content: center;
   align-items: center;
 }
 
-#row5 >.green >.red{
+#row5 > .green >.red{
   height: 10px;
   width: 100%;
 }
@@ -126,45 +126,168 @@ Example 1 & 2 CSS
   align-items: center;
 }
 
-#row5 >.red >.blue{
+#row5 > .red > .blue{
   height: 10px;
   width: 100%;
 }
 
 #row6 {
   display: flex;
+  justify-content: space-between;
 }
 
-.red-container {
+#row6 > #red-container {
+  display: flex;
+  align-items: center;
+}
+
+#row6 > #green-container {
+  display: flex;
+  align-items: flex-end;
+}
+
+#row6 > #blue-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+#row6 > #red-container > .red,
+#row6 > #green-container > .green,
+#row6 > #blue-container > .blue {
+  width: 10px;
+  height: 10px;
+}
+
+#row7 {
   display: flex;
   justify-content: space-between;
 }
 
-#row6 > .red-container > .red {
-  width: 10px;
-  height: 10px;
+#row7 > #obj1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.green-container {
+#row7 > #obj1 > .green{
+  width: 10px;
+  height: 100%;
+}
+
+#row7 > #obj2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+#row7 > #obj2 > .blue{
+  height: 10px;
+  width: 100%;
+}
+
+#row8 {
+  display: flex;
+}
+
+#row8 > #obj1 {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#row8 > #obj2 {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#row8 > #obj3 {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#row8 > #obj1 > .red,
+#row8 > #obj1 > .green,
+#row8 > #obj2 > .red,
+#row8 > #obj2 > .green,
+#row8 > #obj3 > .red,
+#row8 > #obj3 > .green { 
+  width:10px
+}
+
+#row9 {
   display: flex;
   justify-content: space-evenly;
 }
 
-#row6 > .green-container > .green {
-  width: 10px;
-  height: 10px;
-}
-
-.blue-container {
+#row9 > #obj1 {
   display: flex;
-  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;  
 }
 
-#row6 > .blue-container > .blue {
+#row9 > #obj1 > .red {
   width: 10px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#row9 > #obj1 > .red > .blue {
+  width: 100%;
   height: 10px;
 }
 
+#row9 > #obj2 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+#row9 > #obj2 > .green {
+  width: 100%;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#row9 > #obj2 > .green > .red {
+  width: 10px;
+  height: 100%;
+}
+
+#row10 {
+  display: flex;
+}
+
+#row10 > .green {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#row10 > .green > #red {
+  height: 10px;
+  width: 70px;
+}
+
+#row10 > .green > #obj {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+}
+
+#row10 > .green > #obj > .blue {
+  width: 100%;
+  height: 10px;
+}
 
 /*
 Hint: Write Row 1 - 10 CSS below
