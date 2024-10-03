@@ -1,3 +1,285 @@
 body {
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.assignment{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blue {
+  width: 5%;
+  height: 40px;
+  background: #28AAFD;
+}
+
+.green {
+  width: 5%;
+  height: 40px;
+  background: #51AE5E;
+}
+
+.light-red {
+  width: 5%;
+  height: 40px;
+  background: #DC0A2D;
+}
+
+.dark-red {
+  width: 5%;
+  height: 40px;
+  background: #CB0526;
+}
+
+.yellow {
+  width: 5%;
+  height: 40px;
+  background: #E7CF35;
+}
+
+.off-white {
+  width: 5%;
+  height: 40px;
+  background: #DEDEDE;
+}
+
+.white {
+  width: 5%;
+  height: 40px;
+  background: #FFFFFF;
+}
+
+.black {
+  width: 5%;
+  height: 40px;
+  background: #000000;
+}
+
+
+#right-panel > .light-red {
+  height: 512px;
+  width: 256px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+#right-panel > .light-red > #screen {
+  height:96px;
+  width: 192px;
+}
+
+
+#right-panel > .light-red > #top-buttons > #blue-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+#right-panel > .light-red > #top-buttons > #blue-buttons > .blue{
+  height:36px;
+  width: 36px;
+  margin: 3px;
+}
+
+#right-panel > .light-red > #middle-buttons {
+  display: flex;
+  justify-content: space-between;
+  width:100%;
+}
+
+#right-panel > .light-red > #middle-buttons > #off-white-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-inline-start: 21px;
+}
+
+#right-panel > .light-red > #middle-buttons > #off-white-buttons > .off-white {
+  height:36px;
+  width: 36px;
+  margin-inline: 3px;
+}
+
+#right-panel > .light-red > #middle-buttons > .yellow {
+  height:36px;
+  width: 36px;
+  border-radius: 50%;
+  margin-inline-end: 21px;
+}
+
+#right-panel > .light-red > #bottom-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#right-panel > .light-red > #bottom-buttons > .black{
+  height:36px;
+  width: 72px;
+  margin-inline: 32px;
+}
+
+#middle-panel > .black {
+  height: 512px;
+  width: 25px;
+}
+
+#left-panel > .light-red {
+  height: 512px;
+  width: 256px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+#left-panel > .light-red > #top-portion{
+  height: 100px;
+  width: 256px;
+  border-top-left-radius: 16px;
+  border-bottom-color:#000000;
+  border-width: 5px;
+  border-bottom-style: solid;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+#left-panel > .light-red > #top-portion > #top-buttons {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 16px;
+  gap: 16px;
+}
+
+
+#left-panel > .light-red > #top-portion > #top-buttons > .blue {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  border-color:#FFFFFF;
+  border-width: 5px;
+  border-style: solid;
+}
+
+#left-panel > .light-red > #top-portion > #top-buttons > .dark-red {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+}
+
+#left-panel > .light-red > #top-portion > #top-buttons > .yellow {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+}
+
+#left-panel > .light-red > #top-portion > #top-buttons > .green {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+}
+
+
+#left-panel > .light-red > #screen {
+  position: relative;
+  height: 192px;
+  width: 192px;
+  border-bottom-left-radius: 16px;
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#left-panel > .light-red > #screen > #pikachu {
+  width:100%;
+  height:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#left-panel > .light-red > #screen > .dark-red {
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+}
+
+#left-panel > .light-red > #screen > #red1 {
+  top: 10px;
+  left: 40%;
+}
+
+#left-panel > .light-red > #screen > #red2 {
+  top: 10px;
+  left: 52%;
+}
+
+#left-panel > .light-red > #screen > #red3 {
+  bottom: 5%;
+  left: 5%;
+}
+
+#left-panel > .light-red > #screen > #black1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
+#left-panel > .light-red > #screen > #black1 > .black {
+  height: 5px;
+  width: 16px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+#left-panel > .light-red > #bottom-portion{
+  display: flex;
+  margin-top: 64px;
+  margin-right:20px;
+}
+
+#left-panel > .light-red > #bottom-portion > .green {
+  width:96px;
+  height:64px;
+  margin-right: 64px;
+}
+
+#left-panel > .light-red > #bottom-portion > #control-pad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#left-panel > .light-red > #bottom-portion > #control-pad > #vert {
+  height: 64px;
+  width: 26px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#left-panel > .light-red > #bottom-portion > #control-pad > #horiz {
+  width: 64px;
+  height: 26px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
